@@ -10,27 +10,34 @@ timeline_items <- data_frame(
                     "Advisory Committee Meeting", 
                     "RIOT (Research Integrity Online Training)",
                     "Prepare Research Proposal",
-                    "PhD end"),
+                    "Review Protocol",
+                    "PhD end",
+                    "Conduct Systematic Review"),
         start = c("2017-11-22",
+                  "2018-04-20",
+                  "2018-04-20",
                   "2018-02-22",
                   "2018-02-22",
-                  "2018-02-22",
-                  "2018-02-22",
-                  "2021-11-22"),
+                  "2018-04-20",
+                  "2021-11-22",
+                  "2018-07-31"),
         end = c(NA,
                 NA,
                 "2018-05-22", 
                 "2018-05-22",
                 "2018-02-22",
-                NA),
-        group = c(1,2,2,2,2,1)
+                "2018-07-31",
+                NA,
+                "2018-11-30"),
+        group = c(1,2,2,2,2,3,1,3)
 ) %>%
         dplyr::mutate(id = 1:n())
 
 timeline_groups <- data_frame(
         content = c(
                 "General",
-                "First Committee Meeting"
+                "First Committee Meeting",
+                "Systematic Review"
         )
 ) %>% dplyr::mutate(id = 1:n())
 
